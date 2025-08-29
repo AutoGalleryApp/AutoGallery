@@ -50,7 +50,7 @@ class _ImageSenderScreenState extends State<ImageSenderScreen> {
   void initState() {
     super.initState();
     // Initialize from environment variables with fallbacks
-    _serverHost = dotenv.get('SERVER_HOST', fallback: '192.168.1.100');
+    _serverHost = dotenv.get('SERVER_HOST', fallback: '192.168.1.10');
     _serverPort = dotenv.get('SERVER_PORT', fallback: '8080');
     _useHttps = dotenv.get('USE_HTTPS', fallback: 'false').toLowerCase() == 'true';
   }
